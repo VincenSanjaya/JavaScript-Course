@@ -21,6 +21,19 @@ This is a multi-line comment
 //***********************************************
 // Lesson 5 - Variables
 //***********************************************
-var user_name = "Vincen";
+// var user_name = "Vincen";
 
-document.getElementById("user_greeting_message").innerHTML = "Hello " + user_name;
+// document.getElementById("user_greeting_message").innerHTML = "Hello " + user_name;
+
+
+//***********************************************
+// Lesson 8 - Data Types - Booleans
+//***********************************************
+
+var orderValue = 8000;
+
+if (orderValue >= 1000) {
+    console.log("You can do a transaction");
+} else {
+    console.log("You cannot do a transaction");
+}
