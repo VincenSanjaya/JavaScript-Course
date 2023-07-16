@@ -30,10 +30,11 @@ This is a multi-line comment
 // Lesson 8 - Data Types - Booleans
 //***********************************************
 
-var orderValue = 8000;
+// var orderValue = 8000;
 
-if (orderValue >= 1000) {
-    console.log("You can do a transaction");
-} else {
-    console.log("You cannot do a transaction");
-}
+// if (orderValue >= 1000) {
+//     console.log("You can do a transaction");
+// } else {
+//     console.log("You cannot do a transaction");
+// }
+
