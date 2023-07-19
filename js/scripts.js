@@ -70,8 +70,21 @@ This is a multi-line comment
 // Lesson 12 - Data Arrays
 //************************************************
 
-var students = ["Vincen", "John", "Mary", "Jane"];
+// var students = ["Vincen", "John", "Mary", "Jane"];
 
-console.log(students[0]);
+// console.log(students[0]);
 
-var courses = ["HTML", "CSS", "JS", "PHP"];
+// var courses = ["HTML", "CSS", "JS", "PHP"];
+
+
+//************************************************
+// Lesson 13 - Object Methods
+//************************************************
+
+var student = {
+    'firstname': 'Vincen',
+    'lastname': 'Sanjaya',
+    'fullName': function () {
+        return this.firstname + " " + this.lastname;
+    }
+};
