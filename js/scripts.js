@@ -38,3 +38,29 @@ This is a multi-line comment
 //     console.log("You cannot do a transaction");
 // }
 
+
+
+//************************************************
+// Lesson 11 - Function
+//************************************************
+
+function sumNumber() {
+    var num1 = 5;
+    var num2 = 10;
+    var sum = num1 + num2;
+
+    console.log(sum);
+}
+sumNumber();
+
+
+function sumArgs(num1, num2) {
+    sum = num1 + num2;
+    return sum;
+}
+
+var average = sumArgs(10, 20) / 2;
+console.log(average);
+
+
+document.getElementById("sum_result").innerHTML = sumArgs(10, 20);
