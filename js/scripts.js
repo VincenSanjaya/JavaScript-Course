@@ -44,23 +44,34 @@ This is a multi-line comment
 // Lesson 11 - Function
 //************************************************
 
-function sumNumber() {
-    var num1 = 5;
-    var num2 = 10;
-    var sum = num1 + num2;
+// function sumNumber() {
+//     var num1 = 5;
+//     var num2 = 10;
+//     var sum = num1 + num2;
 
-    console.log(sum);
-}
-sumNumber();
-
-
-function sumArgs(num1, num2) {
-    sum = num1 + num2;
-    return sum;
-}
-
-var average = sumArgs(10, 20) / 2;
-console.log(average);
+//     console.log(sum);
+// }
+// sumNumber();
 
 
-document.getElementById("sum_result").innerHTML = sumArgs(10, 20);
+// function sumArgs(num1, num2) {
+//     sum = num1 + num2;
+//     return sum;
+// }
+
+// var average = sumArgs(10, 20) / 2;
+// console.log(average);
+
+
+// document.getElementById("sum_result").innerHTML = sumArgs(10, 20);
+
+
+//************************************************
+// Lesson 12 - Data Arrays
+//************************************************
+
+var students = ["Vincen", "John", "Mary", "Jane"];
+
+console.log(students[0]);
+
+var courses = ["HTML", "CSS", "JS", "PHP"];
