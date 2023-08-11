@@ -81,10 +81,253 @@ This is a multi-line comment
 // Lesson 13 - Object Methods
 //************************************************
 
-var student = {
-    'firstname': 'Vincen',
-    'lastname': 'Sanjaya',
-    'fullName': function () {
-        return this.firstname + " " + this.lastname;
-    }
-};
+// var student = {
+//     'firstname': 'Vincen',
+//     'lastname': 'Sanjaya',
+//     'fullName': function () {
+//         return this.firstname + " " + this.lastname;
+//     }
+// };
+
+
+//************************************************
+// Lesson 16- Events
+//************************************************
+
+// document.getElementById("click-me").onclick = function () {
+//     alert("You clicked me!");
+// }
+// document.getElementById("hover-me").onmouseover = function () {
+//     alert("You hovered me!");
+// }
+// document.getElementById("leave-me").onclick = function () {
+//     alert("You clicked me!");
+// }
+
+// function show_alert() {
+//     alert("You clicked me!");
+// }
+
+// document.onkeydown = function (event) {
+//     if(event.keyCode == 13) {
+//         alert("You pressed the enter key");
+//     } else {
+//         alert("You pressed the " + event.keyCode + " key");
+//     }
+// }
+
+
+//************************************************
+// Lesson 17 - Css Manipulation
+//************************************************
+
+// document.getElementById("color_button").onclick = function () {
+//  document.getElementById("color_button").style.backgroundColor = "red";
+//  document.getElementById("color_button").style.transform = "translateX(100px)";
+// }
+
+// document.getElementById("color_button").onclick = function () {
+//     this.style.backgroundColor = "red";
+//     this.style.transform = "translateX(100px)";
+//    }
+
+// var button = document.getElementById("color_button");
+
+// button.onclick = function () {
+//     button.style.backgroundColor = "red";
+//     button.style.transform = "translateX(100px)";
+// }
+
+
+//************************************************
+// Lesson 18 - More getElement Methods
+//************************************************
+
+// var elements = document.getElementsByClassName("example");
+// console.log(elements);
+
+// var elements = document.getElementsByTagName("p");
+// console.log(elements);
+
+
+//************************************************
+// Lesson 19 - For Loop / In Loop
+//************************************************
+
+// for (var a = 0; a < 5; a+=1) {
+//     console.log(a);
+// }
+
+// var students = ['Peter', 'Mary', 'Joseph', 'John', 'Charles'];
+
+// for (var a = 0; a < students.length; a++) {
+//     console.log(students[a]);
+// }
+
+// var car = {
+//     'Year': 2018,
+//     'Model': 'Toyota',
+//     'Manufacturer': 'Japan',
+//     'FuelType': 'Petrol',
+// }
+
+// for (var prop in car) {
+//     console.log(prop + " : " + car[prop]);
+// }
+
+// var elements = document.getElementsByClassName("example");
+
+// for (var a = 0; a < elements.length; a++){
+//     elements[a].style.color = "red";
+//     elements[a].style.fontWeight = "bold";
+// }
+
+
+//************************************************
+// Lesson 20 - While and do/while Loops
+//************************************************
+
+// var count = 0;
+
+// while (count < 5) {
+//     console.log(count);
+//     count++;
+// }
+
+// var count = 10;
+
+// do {
+//     console.log(count);
+//     count++;
+
+// } while (count < 5);
+
+
+//************************************************
+// Lesson 21 - Conditional Statements
+//************************************************
+
+// var age = 17;
+
+// if (age = 17) {
+//     console.log("Underage");
+// } else if (age >= 65) {
+//     console.log('Senior');
+// } else {
+//     console.lo
+// }
+
+// grade = 7
+// absences = 3
+
+// //Solving the problem with && and ||
+// if (grade >= 7((grade = 7 && absences <= 5)) {
+//     console.log("The student hs been uproaded")
+// } else {
+//     console.log("The students has fail");
+// }
+
+// var name = "Vincen";
+
+// if (name) {
+//     console.log("The name is " + name);
+// } else {
+//     console.log("No name");
+// }
+
+// var total = 1000;
+
+// if (total) {
+//     console.log("The total is " + total);
+// } else {
+//     console.log("No total");
+// }
+
+// var firstName = "";
+
+// console.log(name ? "The name is " + name : "No name");
+
+// var age = 18;
+
+// console.log(age < 18 ? "Underage" : age >= 65 ? "Senior" : "Adult");
+
+
+//************************************************
+// Lesson 22 - Nesting Loops and Conditions
+//************************************************
+
+// var isMember = false;
+// var age = 17;
+
+// if (isMember || age >= 65) {
+//     console.log("You can have a discount");
+// } else if (age < 18) {
+//     console.log("$10");
+// } else {
+//     console.log("$20");
+// }
+
+// var employees = [
+
+//     {
+//         'name': 'Charles Silva',
+//         'age': 45,
+//         'children': ['Andrew Silva', 'Maria Silva']
+//     },
+
+//     {
+//         'name': 'Elizabeth Green',
+//         'age': 32,
+//         'children': ['Peter Green']
+//     },
+
+//     {
+//         'name': 'George Banks',
+//         'age': 39,
+//         'children': ['Philipp Banks', 'Rose Banks', 'Tara Banks']
+//     }
+// ];
+
+// document.getElementById("children").innerHTML = "";
+// for (var a = 0; a < employees.length; a++) {
+//     var childrenList = employees[a].children;
+//     for (var b = 1; b < childrenList.length; b++) {
+//         var child = childrenList[b];
+//         document.getElementById("children").innerHTML += "<li>" + child + "</li>";
+//     }
+// }
+
+
+//************************************************
+// Lesson 23 - Variable Scope
+//************************************************
+
+// var personsname = "Vincen";
+
+// function create_name() {
+//     var personsName = "Vincen";
+//     console.log(personsName);
+// }
+
+// create_name();
+
+// if (true) {
+//     var personsName = "Vincen";
+//     console.log(personsName);
+// }
+
+// for (var a = 0; a < 5; a++) {
+//     console.log("Parent Loop", a);
+
+//     for (var b = 0; b < 5; b++) {
+//         console.log("Child Loop", a);
+//     }
+// }
+
+function create_name() {
+    myName = "Vincen";
+    console.log(myName);
+}
+
+create_name();
+console.log(myName);
